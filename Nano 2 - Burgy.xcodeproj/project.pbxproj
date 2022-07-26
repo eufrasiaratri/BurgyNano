@@ -14,6 +14,7 @@
 		69F940C3288E7FBF00543DE7 /* Nano_2___Burgy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69F940C1288E7FBF00543DE7 /* Nano_2___Burgy.xcdatamodeld */; };
 		69F940C5288E7FC000543DE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F940C4288E7FC000543DE7 /* Assets.xcassets */; };
 		69F940C8288E7FC000543DE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F940C6288E7FC000543DE7 /* LaunchScreen.storyboard */; };
+		69F940D2289054CE00543DE7 /* Silom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69F940D1289054CE00543DE7 /* Silom.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		69F940C4288E7FC000543DE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69F940C7288E7FC000543DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69F940C9288E7FC000543DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69F940D1289054CE00543DE7 /* Silom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Silom.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +64,29 @@
 				69F940BA288E7FBF00543DE7 /* SceneDelegate.swift */,
 				69F940BC288E7FBF00543DE7 /* ViewController.swift */,
 				69F940BE288E7FBF00543DE7 /* Main.storyboard */,
-				69F940C4288E7FC000543DE7 /* Assets.xcassets */,
-				69F940C6288E7FC000543DE7 /* LaunchScreen.storyboard */,
 				69F940C9288E7FC000543DE7 /* Info.plist */,
-				69F940C1288E7FBF00543DE7 /* Nano_2___Burgy.xcdatamodeld */,
+				69F940CF288E802E00543DE7 /* Resources */,
 			);
 			path = "Nano 2 - Burgy";
+			sourceTree = "<group>";
+		};
+		69F940CF288E802E00543DE7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69F940D02890549400543DE7 /* Font */,
+				69F940C4288E7FC000543DE7 /* Assets.xcassets */,
+				69F940C6288E7FC000543DE7 /* LaunchScreen.storyboard */,
+				69F940C1288E7FBF00543DE7 /* Nano_2___Burgy.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		69F940D02890549400543DE7 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				69F940D1289054CE00543DE7 /* Silom.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69F940C8288E7FC000543DE7 /* LaunchScreen.storyboard in Resources */,
+				69F940D2289054CE00543DE7 /* Silom.ttf in Resources */,
 				69F940C5288E7FC000543DE7 /* Assets.xcassets in Resources */,
 				69F940C0288E7FBF00543DE7 /* Main.storyboard in Resources */,
 			);
