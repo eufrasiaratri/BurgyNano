@@ -20,19 +20,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="71J-Pm-LUh">
-                                <rect key="frame" x="83" y="345" width="249" height="176"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="71J-Pm-LUh">
+                                <rect key="frame" x="82.5" y="340" width="249" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="QQz-O4-0I3"/>
+                                    <constraint firstAttribute="height" constant="176" id="xvn-TV-bvN"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EST.2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUw-lj-WaI">
-                                <rect key="frame" x="165" y="606" width="85" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EST.2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUw-lj-WaI">
+                                <rect key="frame" x="164.5" y="608.5" width="85" height="23"/>
                                 <fontDescription key="fontDescription" name="Silom" family="Silom" pointSize="18"/>
                                 <color key="textColor" red="0.99607843159999998" green="0.98039215800000001" blue="0.87843137979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Burgy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZA-BM-PhC">
-                                <rect key="frame" x="134" y="546" width="147" height="52"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burgy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZA-BM-PhC">
+                                <rect key="frame" x="135.5" y="546" width="143" height="57.5"/>
                                 <fontDescription key="fontDescription" name="Silom" family="Silom" pointSize="45"/>
                                 <color key="textColor" red="0.99607843159999998" green="0.98039215800000001" blue="0.87843137979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -41,9 +43,12 @@
                         <viewLayoutGuide key="safeArea" id="wz8-5H-auC"/>
                         <color key="backgroundColor" red="0.15732777789999999" green="0.2117646933" blue="0.097705234710000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="UZA-BM-PhC" firstAttribute="centerX" secondItem="ra1-nW-u9A" secondAttribute="centerX" id="IXd-9g-9gx"/>
-                            <constraint firstItem="UZA-BM-PhC" firstAttribute="centerX" secondItem="ra1-nW-u9A" secondAttribute="centerX" id="U6m-ko-th4"/>
-                            <constraint firstItem="UZA-BM-PhC" firstAttribute="centerY" secondItem="ra1-nW-u9A" secondAttribute="centerY" id="lsS-uF-jQg"/>
+                            <constraint firstItem="DUw-lj-WaI" firstAttribute="top" secondItem="UZA-BM-PhC" secondAttribute="bottom" constant="5" id="QqC-dK-Hcu"/>
+                            <constraint firstItem="DUw-lj-WaI" firstAttribute="centerX" secondItem="ra1-nW-u9A" secondAttribute="centerX" id="ZKP-hJ-nZg"/>
+                            <constraint firstItem="UZA-BM-PhC" firstAttribute="top" secondItem="71J-Pm-LUh" secondAttribute="bottom" constant="30" id="aLX-GN-fwd"/>
+                            <constraint firstItem="71J-Pm-LUh" firstAttribute="centerX" secondItem="ra1-nW-u9A" secondAttribute="centerX" id="b1n-4R-frV"/>
+                            <constraint firstItem="71J-Pm-LUh" firstAttribute="centerY" secondItem="ra1-nW-u9A" secondAttribute="centerY" constant="-20" id="cpb-vR-nj3"/>
+                            <constraint firstItem="UZA-BM-PhC" firstAttribute="centerX" secondItem="ra1-nW-u9A" secondAttribute="centerX" id="sJA-jb-iUZ"/>
                         </constraints>
                     </view>
                 </viewController>
