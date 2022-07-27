@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69B4CCFD2890EB2C00F893AF /* TimerRunningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B4CCFC2890EB2C00F893AF /* TimerRunningViewController.swift */; };
+		69BB8E0428918BDB002F953E /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB8E0328918BDB002F953E /* CircularProgressView.swift */; };
 		69F940B9288E7FBF00543DE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F940B8288E7FBF00543DE7 /* AppDelegate.swift */; };
 		69F940BB288E7FBF00543DE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F940BA288E7FBF00543DE7 /* SceneDelegate.swift */; };
 		69F940BD288E7FBF00543DE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F940BC288E7FBF00543DE7 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69B4CCFC2890EB2C00F893AF /* TimerRunningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRunningViewController.swift; sourceTree = "<group>"; };
+		69BB8E0328918BDB002F953E /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		69F940B5288E7FBF00543DE7 /* Nano 2 - Burgy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano 2 - Burgy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F940B8288E7FBF00543DE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69F940BA288E7FBF00543DE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 				69F940B8288E7FBF00543DE7 /* AppDelegate.swift */,
 				69F940BA288E7FBF00543DE7 /* SceneDelegate.swift */,
 				69F940BE288E7FBF00543DE7 /* Main.storyboard */,
+				69BB8E0328918BDB002F953E /* CircularProgressView.swift */,
 				AC58B6E82890D4F1008C7CDE /* MainCopy.storyboard */,
 				69F940C9288E7FC000543DE7 /* Info.plist */,
 				69F940CF288E802E00543DE7 /* Resources */,
@@ -103,6 +108,7 @@
 				AC58B6E62890D4B5008C7CDE /* NewTaskViewController.swift */,
 				69F940BC288E7FBF00543DE7 /* ViewController.swift */,
 				AC58B6EA2890D621008C7CDE /* TimerPageViewController.swift */,
+				69B4CCFC2890EB2C00F893AF /* TimerRunningViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,10 +195,12 @@
 			files = (
 				69F940BD288E7FBF00543DE7 /* ViewController.swift in Sources */,
 				AC58B6EB2890D621008C7CDE /* TimerPageViewController.swift in Sources */,
+				69BB8E0428918BDB002F953E /* CircularProgressView.swift in Sources */,
 				AC58B6E72890D4B5008C7CDE /* NewTaskViewController.swift in Sources */,
 				69F940B9288E7FBF00543DE7 /* AppDelegate.swift in Sources */,
 				69F940C3288E7FBF00543DE7 /* Nano_2___Burgy.xcdatamodeld in Sources */,
 				69F940BB288E7FBF00543DE7 /* SceneDelegate.swift in Sources */,
+				69B4CCFD2890EB2C00F893AF /* TimerRunningViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

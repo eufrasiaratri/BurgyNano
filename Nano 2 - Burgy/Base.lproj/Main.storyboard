@@ -185,12 +185,21 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" red="0.99607843159999998" green="0.98039215800000001" blue="0.87843137979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="SaveButtonPress:" destination="HDv-i3-cXC" eventType="touchUpInside" id="nuw-X7-I7g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kuO-hL-En3"/>
                         <color key="backgroundColor" red="0.99607843159999998" green="0.98039215800000001" blue="0.87843137979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="jOt-0I-gb1"/>
+                    <connections>
+                        <outlet property="BreakTextField" destination="VGW-Hj-gMn" id="6SR-YE-pQX"/>
+                        <outlet property="FocuseTextField" destination="1Dy-MC-1GU" id="4Gj-oX-nCa"/>
+                        <outlet property="TaskTextField" destination="uMW-rR-dhc" id="zV7-gn-fZO"/>
+                        <segue destination="vJa-Vw-dcR" kind="presentation" identifier="GoToTimer" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="9Wo-hc-Gns"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9c-TZ-OJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -228,6 +237,10 @@
                                     <color key="baseForegroundColor" red="0.15732777789999999" green="0.2117646933" blue="0.097705234710000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.99607843159999998" green="0.98039215800000001" blue="0.87843137979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="CookButtonPress:" destination="vJa-Vw-dcR" eventType="touchUpInside" id="BKy-ii-Urh"/>
+                                    <segue destination="ipY-Fa-cmH" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="kJG-lg-tBa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00 : 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUn-FN-Y2s">
                                 <rect key="frame" x="102" y="567" width="211" height="77"/>
@@ -247,15 +260,19 @@
                         <viewLayoutGuide key="safeArea" id="eBe-xy-6eK"/>
                         <color key="backgroundColor" red="0.15686274510000001" green="0.21176470589999999" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="TaskTitle" destination="S8y-fU-A62" id="Il7-Rn-9TS"/>
+                        <outlet property="TimerLabel" destination="IUn-FN-Y2s" id="g93-jS-io2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1c7-aq-jFf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2242.0289855072465" y="97.767857142857139"/>
+            <point key="canvasLocation" x="2239" y="98"/>
         </scene>
-        <!--View Controller-->
+        <!--Timer Running View Controller-->
         <scene sceneID="m0Z-9P-1Uw">
             <objects>
-                <viewController id="ipY-Fa-cmH" sceneMemberID="viewController">
+                <viewController id="ipY-Fa-cmH" customClass="TimerRunningViewController" customModule="Nano_2___Burgy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L2f-4l-Y3S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,17 +288,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-7" translatesAutoresizingMaskIntoConstraints="NO" id="vW3-H7-yQ8">
-                                <rect key="frame" x="83" y="256" width="249" height="249"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-7" translatesAutoresizingMaskIntoConstraints="NO" id="vW3-H7-yQ8">
+                                <rect key="frame" x="82.5" y="323.5" width="249" height="249"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="249" id="DMl-YV-a1U"/>
+                                    <constraint firstAttribute="width" constant="249" id="sQ0-Ma-bX3"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="17 : 05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUj-BC-Z3P">
-                                <rect key="frame" x="102" y="573" width="211" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Silom" family="Silom" pointSize="60"/>
-                                <color key="textColor" red="0.82352941180000006" green="0.7843137255" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtQ-om-m5R">
                                 <rect key="frame" x="44" y="720" width="248" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -291,6 +304,9 @@
                                     <color key="baseForegroundColor" red="0.15732777789999999" green="0.2117646933" blue="0.097705234710000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.99607843159999998" green="0.98039215800000001" blue="0.87843137979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="GiveUpButtonPress:" destination="ipY-Fa-cmH" eventType="touchUpInside" id="Kg4-x2-LKd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKS-lY-i12">
                                 <rect key="frame" x="313" y="724" width="64" height="64"/>
@@ -302,15 +318,38 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" red="0.99607843159999998" green="0.98039215800000001" blue="0.87843137979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="BreakButtonPress:" destination="ipY-Fa-cmH" eventType="touchUpInside" id="Ynq-OG-kE7"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="17 : 05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUj-BC-Z3P">
+                                <rect key="frame" x="102" y="605" width="211" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Silom" family="Silom" pointSize="60"/>
+                                <color key="textColor" red="0.82352941180000006" green="0.7843137255" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XBj-L7-eJz"/>
                         <color key="backgroundColor" red="0.15686274510000001" green="0.21176470589999999" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vW3-H7-yQ8" firstAttribute="centerX" secondItem="L2f-4l-Y3S" secondAttribute="centerX" id="Ubb-0Y-JER"/>
+                            <constraint firstItem="vW3-H7-yQ8" firstAttribute="centerY" secondItem="L2f-4l-Y3S" secondAttribute="centerY" id="ebL-bv-irt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="BreakButton" destination="QKS-lY-i12" id="sqU-t0-SdE"/>
+                        <outlet property="GiveUpButton" destination="TtQ-om-m5R" id="fWV-yX-evm"/>
+                        <outlet property="ProgressImage" destination="vW3-H7-yQ8" id="PRA-X5-obh"/>
+                        <outlet property="TaskLabel" destination="Ol9-EV-4cf" id="ZVt-y3-4Tz"/>
+                        <outlet property="TimerLabel" destination="QUj-BC-Z3P" id="PQs-lJ-1KN"/>
+                        <segue destination="c72-pS-7Jy" kind="unwind" identifier="UnwindToMain" unwindAction="unwind:" id="4TU-VF-p3c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1n-Tf-phL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="c72-pS-7Jy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2990" y="98"/>
+            <point key="canvasLocation" x="2958" y="98"/>
         </scene>
     </scenes>
     <resources>
