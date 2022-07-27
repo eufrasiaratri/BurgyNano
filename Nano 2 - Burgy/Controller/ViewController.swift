@@ -16,5 +16,8 @@ class ViewController: UIViewController {
     @IBAction func unwind( _ seg: UIStoryboardSegue) {
     }
 
+    @IBAction func clickHerePressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToNewTask", sender: self)
+    }
 }
 
