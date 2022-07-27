@@ -17,6 +17,7 @@
 		69F940D2289054CE00543DE7 /* Silom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69F940D1289054CE00543DE7 /* Silom.ttf */; };
 		AC58B6E72890D4B5008C7CDE /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58B6E62890D4B5008C7CDE /* NewTaskViewController.swift */; };
 		AC58B6E92890D4F1008C7CDE /* MainCopy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC58B6E82890D4F1008C7CDE /* MainCopy.storyboard */; };
+		AC58B6EB2890D621008C7CDE /* TimerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58B6EA2890D621008C7CDE /* TimerPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		69F940D1289054CE00543DE7 /* Silom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Silom.ttf; sourceTree = "<group>"; };
 		AC58B6E62890D4B5008C7CDE /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
 		AC58B6E82890D4F1008C7CDE /* MainCopy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainCopy.storyboard; sourceTree = "<group>"; };
+		AC58B6EA2890D621008C7CDE /* TimerPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				AC58B6E62890D4B5008C7CDE /* NewTaskViewController.swift */,
 				69F940BC288E7FBF00543DE7 /* ViewController.swift */,
+				AC58B6EA2890D621008C7CDE /* TimerPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69F940BD288E7FBF00543DE7 /* ViewController.swift in Sources */,
+				AC58B6EB2890D621008C7CDE /* TimerPageViewController.swift in Sources */,
 				AC58B6E72890D4B5008C7CDE /* NewTaskViewController.swift in Sources */,
 				69F940B9288E7FBF00543DE7 /* AppDelegate.swift in Sources */,
 				69F940C3288E7FBF00543DE7 /* Nano_2___Burgy.xcdatamodeld in Sources */,

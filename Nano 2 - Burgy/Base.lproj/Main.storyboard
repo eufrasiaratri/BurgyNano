@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="771" y="98"/>
         </scene>
-        <!--View Controller-->
+        <!--New Task View Controller-->
         <scene sceneID="Qri-SI-J83">
             <objects>
-                <viewController id="HDv-i3-cXC" sceneMemberID="viewController">
+                <viewController id="HDv-i3-cXC" customClass="NewTaskViewController" customModule="Nano_2___Burgy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HfY-u8-ubu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="1506" y="98"/>
         </scene>
-        <!--View Controller-->
+        <!--Timer Page View Controller-->
         <scene sceneID="fhX-ww-i39">
             <objects>
-                <viewController id="vJa-Vw-dcR" sceneMemberID="viewController">
+                <viewController id="vJa-Vw-dcR" customClass="TimerPageViewController" customModule="Nano_2___Burgy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sl3-UC-LLL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
