@@ -2,7 +2,7 @@
 //  TimerPageViewController.swift
 //  Nano 2 - Burgy
 //
-//  Created by Bryan Kenneth on 27/07/22.
+//  Created by Eufrasia Ratri on 27/07/22.
 //
 
 import UIKit
