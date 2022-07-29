@@ -16,6 +16,7 @@ class TimerRunningViewController: UIViewController {
     @IBOutlet weak var BreakButton: UIButton!
     @IBOutlet weak var GiveUpButton: UIButton!
     
+    @IBOutlet weak var giveBtnConst: NSLayoutConstraint!
     var circularProgressBarView: CircularProgressBarView!
         var circularViewDuration: TimeInterval = 4
     
@@ -61,9 +62,10 @@ class TimerRunningViewController: UIViewController {
             GiveUpButton.titleLabel?.text = "Give Up"
             BreakButton.isHidden = false
             ProgressImage.image = UIImage (named: "Image-7")
+            giveBtnConst.constant = 12000
         } else {
-            let alert = UIAlertController(title: "Done", message: " Your burger isn’t fully cooked. Please Try Again ", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Click", style: .default, handler: { Action in
+            let alert = UIAlertController(title: "Oops", message: " Your burger isn’t fully cooked. Please Try Again ", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: { Action in
                 self.performSegue(withIdentifier: "UnwindToMain", sender: self)
             }))
                 self.present(alert, animated: true) {
@@ -78,6 +80,7 @@ class TimerRunningViewController: UIViewController {
         circularProgressBarView.progressAnimation(duration: TimeInterval( breakremaining ), from: Float((breaktime*60)-breakremaining)/Float(breaktime*60))
         BreakButton.isHidden = true
         GiveUpButton.titleLabel?.text = "done"
+        giveBtnConst.constant = 44
         ProgressImage.image = UIImage(named: "Image-9")
     }
     func updatelabel (seconds: Int) {
@@ -94,8 +97,8 @@ class TimerRunningViewController: UIViewController {
                     if self.breakremaining > 0 {
                     self.breakremaining -= 1
                     self.updatelabel(seconds: self.breakremaining)
-                } else {let alert = UIAlertController(title: "Done", message: "Break has ended ", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Click", style: .default, handler: nil))
+                } else {let alert = UIAlertController(title: "Oops", message: "Break has ended ", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Got It", style: .default, handler: nil))
                     self.present(alert, animated: true) {
                         self.isbreak = false
                         self.circularProgressBarView.progressAnimation(duration: TimeInterval( self.timeremaining ), from: Float((self.focusetime*60)-self.timeremaining)/Float(self.focusetime*60))
@@ -108,11 +111,13 @@ class TimerRunningViewController: UIViewController {
                     if self.timeremaining > 0 {
                     self.timeremaining -= 1
                     self.updatelabel(seconds: self.timeremaining)
-                } else {let alert = UIAlertController(title: "Done", message: "Your session has expired", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Click", style: .default, handler: nil))
-                    self.present(alert, animated: true) {
-                       
-                    }
+                } else { let alert = UIAlertController(title: "You did it!", message: " You have successfully cooked a burger ", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { Action in
+                        self.performSegue(withIdentifier: "UnwindToMain", sender: self)
+                    }))
+                        self.present(alert, animated: true) {
+                           
+                        }
                 }
                 }
                 

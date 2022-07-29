@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NewTaskViewController: UIViewController {
+class NewTaskViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var BreakTextField: UITextField!
     @IBOutlet weak var FocuseTextField: UITextField!
@@ -28,19 +28,22 @@ class NewTaskViewController: UIViewController {
             
             
         }    else {let alert = UIAlertController(title: "Input Invalid", message: "Please fill out all fields to proceed", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Click", style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: "Got It", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             
         }
+        
+        TaskTextField.delegate = self
+        BreakTextField.delegate = self
+        FocuseTextField.delegate = self
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
-    */
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
 }

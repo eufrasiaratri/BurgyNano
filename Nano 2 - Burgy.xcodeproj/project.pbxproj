@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		696028822892557A0005BA77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696028812892557A0005BA77 /* Assets.xcassets */; };
 		69B4CCFD2890EB2C00F893AF /* TimerRunningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B4CCFC2890EB2C00F893AF /* TimerRunningViewController.swift */; };
 		69BB8E0428918BDB002F953E /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB8E0328918BDB002F953E /* CircularProgressView.swift */; };
 		69F940B9288E7FBF00543DE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F940B8288E7FBF00543DE7 /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		696028812892557A0005BA77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Downloads/AppIcons-2/Assets.xcassets"; sourceTree = "<group>"; };
 		69B4CCFC2890EB2C00F893AF /* TimerRunningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRunningViewController.swift; sourceTree = "<group>"; };
 		69BB8E0328918BDB002F953E /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		69F940B5288E7FBF00543DE7 /* Nano 2 - Burgy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano 2 - Burgy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 			children = (
 				69F940D02890549400543DE7 /* Font */,
 				69F940C4288E7FC000543DE7 /* Assets.xcassets */,
+				696028812892557A0005BA77 /* Assets.xcassets */,
 				69F940C6288E7FC000543DE7 /* LaunchScreen.storyboard */,
 				69F940C1288E7FBF00543DE7 /* Nano_2___Burgy.xcdatamodeld */,
 			);
@@ -182,6 +185,7 @@
 				69F940D2289054CE00543DE7 /* Silom.ttf in Resources */,
 				AC58B6E92890D4F1008C7CDE /* MainCopy.storyboard in Resources */,
 				69F940C5288E7FC000543DE7 /* Assets.xcassets in Resources */,
+				696028822892557A0005BA77 /* Assets.xcassets in Resources */,
 				69F940C0288E7FBF00543DE7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
